@@ -78,7 +78,7 @@ datetime(void * args)
         mo = local->tm_mon + 1;
         yr = local->tm_year + 1900;
 
-        snprintf(datestr, datesize, "%d/%02d/%02d %02d:%02d:%02d\0", yr, mo, day, hr, min, sec);
+        snprintf(datestr, datesize, "%d/%02d/%02d %02d:%02d:%02d", yr, mo, day, hr, min, sec);
         strncpy(DATE, datestr, datesize);
         usleep(10000);
     }

@@ -7,7 +7,7 @@ clean: dwmbar
 	rm dwmbar
 
 install: dwmbar
-	sudo cp dwmbar /usr/local/bin
+	cp dwmbar /usr/local/bin
 
 uninstall: /usr/local/bin/dwmbar
-	sudo rm /usr/local/bin/dwmbar
+	rm /usr/local/bin/dwmbar

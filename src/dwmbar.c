@@ -21,7 +21,7 @@ void * ipaddr (void * args);
 int
 main(int argc, char ** argv)
 {
-    size_t outsize = 38;
+    size_t outsize = 40;
     char output[outsize];
 
     Display * dpy = NULL;
@@ -41,7 +41,7 @@ main(int argc, char ** argv)
 
     while (STOPNO == 0)
     {
-        snprintf(output, outsize, "%s | %s", IPADDR, DATE);
+        snprintf(output, outsize, " %s | %s ", IPADDR, DATE);
         XStoreName(dpy, win, output);
         XFlush(dpy);
 
